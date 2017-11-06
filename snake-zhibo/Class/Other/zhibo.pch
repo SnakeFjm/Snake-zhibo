@@ -1,0 +1,20 @@
+//
+//  zhibo.pch
+//  snake-zhibo
+//
+//  Created by Snake on 17/6/17.
+//  Copyright © 2017年 Snake. All rights reserved.
+//
+
+#ifndef zhibo_pch
+#define zhibo_pch
+
+#import "Masonry.h"
+#import "SNAKEMacros.h"
+#import "YYKit.h"
+#import "APIConfig.h"
+#import "MJExtension.h"
+#import "UIImageView+SDWebImage.h"
+#import "SDWebImageManager.h"
+#import "UIButton+WebCache.h"
+#endif /* zhibo_pch */

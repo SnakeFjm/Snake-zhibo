@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SNAKE_Launch_ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="8RH-VM-GMP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-ey-vfP">
+                    <rect key="frame" x="278" y="29" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="Rb9-cW-jbf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-Ox-Up1">
+                    <rect key="frame" x="10" y="20" width="82" height="26"/>
+                    <state key="normal" title="广州市" image="launch_map_on">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-ev-ifT">
+                    <rect key="frame" x="62.5" y="311" width="250" height="44"/>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="sXq-GH-Wzo"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播起个标题呗" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-nf-XF8">
+                    <rect key="frame" x="62" y="251" width="250" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GcE-N2-8YE"/>
+                        <constraint firstAttribute="width" constant="250" id="t7Y-6G-1LL"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7Ue-ey-vfP" secondAttribute="trailing" constant="33" id="BIF-pB-pGg"/>
+                <constraint firstAttribute="bottom" secondItem="8RH-VM-GMP" secondAttribute="bottom" id="EPV-Na-0o8"/>
+                <constraint firstItem="7Ue-ey-vfP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="Hat-P4-Ri2"/>
+                <constraint firstItem="8RH-VM-GMP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R2O-YB-tIX"/>
+                <constraint firstItem="CuV-ev-ifT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SIq-GC-3Tx"/>
+                <constraint firstItem="NuI-Ox-Up1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Xpe-C0-gNm"/>
+                <constraint firstItem="CuV-ev-ifT" firstAttribute="top" secondItem="JZG-nf-XF8" secondAttribute="bottom" constant="30" id="g0w-On-O5m"/>
+                <constraint firstItem="8RH-VM-GMP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ggc-nG-4AC"/>
+                <constraint firstAttribute="trailing" secondItem="8RH-VM-GMP" secondAttribute="trailing" id="mDA-Lg-Ylp"/>
+                <constraint firstItem="CuV-ev-ifT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qsi-Nx-igg"/>
+                <constraint firstItem="CuV-ev-ifT" firstAttribute="centerX" secondItem="JZG-nf-XF8" secondAttribute="centerX" id="s5O-ur-EM6"/>
+                <constraint firstItem="NuI-Ox-Up1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="vtx-I8-zEq"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="16" height="16"/>
+        <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
+    </resources>
+</document>
